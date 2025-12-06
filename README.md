@@ -16,16 +16,22 @@ Payment Service (Mock Payment)
 
 
 Users can browse events, book tickets, make payments, and receive email confirmations.
+
 Admins can create, update, and delete events.
 
 Features
 User Features
 
 ✔ Signup & Login using JWT
+
 ✔ Browse all events
+
 ✔ Book tickets
+
 ✔ View personal bookings
+
 ✔ Make payments
+
 ✔ Receive confirmation emails
 
  Admin Features
@@ -37,12 +43,19 @@ User Features
 
 
 Technology Stack
+
 Backend — Spring Boot 3.5.7
+
 Spring Web
+
 Spring Data JPA
+
 Spring Security + JWT
+
 PostgreSQL
+
 JavaMailSender
+
 Feign Clients (optional)
 
 
@@ -50,10 +63,15 @@ Feign Clients (optional)
 Frontend — React.js
 
 React Router
+
 Axios
+
 JWT decode
+
 Context API (optional)
 
 Database
+
 PostgreSQL 18
+
 pgAdmin 4
