@@ -3,10 +3,15 @@ Event Booking Platform — Microservices + React + JWT
 A full-stack Event Booking Platform built using:
 
 Spring Boot Microservices
+
 React.js Frontend
+
 JWT Authentication
+
 PostgreSQL Databases
+
 Email Service (SMTP)
+
 Payment Service (Mock Payment)
 
 
