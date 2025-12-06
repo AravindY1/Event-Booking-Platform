@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* small base tweaks for the minimal clean design */
+:root {
+  --app-bg: #f8fafc;
+  --card-bg: #ffffff;
+  --muted: #6b7280;
+}
+html,body,#root { height: 100%; }
+body {
+  background: var(--app-bg);
+  color: #0f172a;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

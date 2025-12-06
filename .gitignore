@@ -1,0 +1,16 @@
+# Node
+node_modules/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+
+# Java / .NET specific
+bin/
+obj/
+target/

@@ -1,0 +1,75 @@
+
+# Event Service (Spring Boot)
+
+Manages event creation, updates, listing, and internal seat management by admin
+
+## Tech Stack
+- Java 17
+- Spring Boot
+- Spring Web
+- Spring Data JPA
+- Spring Security (ADMIN for create/update/delete)
+- postgreSQL
+
+## Run Instructions
+
+cd event-service
+mvn clean install
+mvn spring-boot:run
+
+
+Runs at:
+ http://localhost:8081
+
+application.properties
+
+spring.application.name=project 
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/eventdb
+spring.datasource.username=postgres
+spring.datasource.password=password
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+
+Event Table
+
+event_id      PK
+name          VARCHAR
+description   VARCHAR
+event_date    DATETIME
+price         DOUBLE
+total_seats   INT
+
+
+
+API Endpoints
+POST /events/create (ADMIN)
+
+{
+  "name": "Rock Concert",
+  "description": "Live music",
+  "eventDate": "2025-02-15T18:00:00",
+  "price": 200,
+  "totalSeats": 100
+}
+
+
+
+
+PUT /events/update/{id} (ADMIN)
+DELETE /events/delete/{id} (ADMIN)
+GET /events/all
+Returns all events.
+GET /events/id/{id}
+Returns a single event.
+
+Internal APIs (Called from Booking Service)
+POST /events/internal/updateSeats
+POST /events/internal/restoreSeats
+These are not protected by admin rules.
+
+
+
+
