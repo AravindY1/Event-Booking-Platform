@@ -214,6 +214,7 @@ Email Service (8084)
 
 
 **Run Frontend (VS Code)**
+
 cd frontend-react
 
 npm install
@@ -228,6 +229,7 @@ http://localhost:3000
 
 
 **Frontend Pages**
+
 Page	                Description
 
 /login	              User login
