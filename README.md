@@ -102,8 +102,11 @@ pgAdmin 4
 
 **Project Structure**
 
+
 event-booking-platform/
+
 │
+
 ├── auth-service/          # Login, signup, JWT
 
 ├── event-service/         # Event CRUD
