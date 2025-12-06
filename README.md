@@ -96,9 +96,13 @@ pgAdmin 4
 event-booking-platform/
 │
 ├── auth-service/          # Login, signup, JWT
+
 ├── event-service/         # Event CRUD
+
 ├── booking-service/       # Bookings
+
 ├── payment-service/       # Payment logic
+
 ├── email-service/         # Sends confirmation emails
 │
 └── frontend-react/        # React user interface
@@ -141,22 +145,33 @@ spring.jpa.hibernate.ddl-auto=update
 API Endpoints
 Auth Service (8080)
 Method	Endpoint	Description
+
 POST	/auth/signup	Register
+
 POST	/auth/login	Login
 
 
 Event Service (8081)
+
 Method	Endpoint	Description
+
 GET	/events	Get all events
+
 POST	/events	Create event (Admin)
-PUT	/events/{id}	Update event
-DELETE	/events/{id}	Delete event
+
+PUT	/events/{id}	Update event (Admin)
+
+DELETE	/events/{id}	Delete event (Admin)
 
 
 Booking Service (8082)
+
 Method	Endpoint	Description
+
 POST	/bookings/{eventId}	Book event
+
 GET	/bookings/myBookings	User’s bookings
+
 DELETE	/bookings/{id}	Cancel booking
 
 
@@ -195,11 +210,17 @@ http://localhost:3000
 
 Frontend Pages
 Page	Description
+
 /login	User login
+
 /signup	User registration
+
 /	Home page — list of events
+
 /events/:id/book	Book an event
+
 /my-bookings	User bookings
+
 /admin/events	Admin event dashboard
 
 
@@ -222,7 +243,11 @@ Email trigger
 Future Enhancements
 
 ✔ Search events
+
 ✔ Filter by category/date
+
 ✔ Payment gateway integration (Stripe/Razorpay)
+
 ✔ Notification microservice via WebSockets
+
 ✔ Kubernetes deployment
