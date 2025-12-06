@@ -20,6 +20,7 @@ Admins can create, update, and delete events.
 
 
 **System Architecture**
+
                            ┌─────────────────────┐
                            │     React UI        │
                            │  (localhost:3000)   │
