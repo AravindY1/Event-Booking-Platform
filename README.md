@@ -61,7 +61,7 @@ Admins can create, update, and delete events.
 
 ✔ Delete events
 
-✔ View all bookings (optional extension)
+✔ View all bookings
 
 
 **Technology Stack**
@@ -116,7 +116,9 @@ event-booking-platform/
 ├── payment-service/       # Payment logic
 
 ├── email-service/         # Sends confirmation emails
+
 │
+
 └── frontend-react/        # React user interface
 
 **Installation & Setup**
